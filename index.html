@@ -1,9 +1,68 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html>
+
 <head>
-<title>Fetch API Tutorial</title>
+    <meta charset="UTF-8" />
+    <title>Ajax dengan JSON </title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-<h1> Selamat datang di Fetch API Tutorial</h1>
+    <h1>Mengambil Kumpulan Data</h1>
+    <table id="tabelLogin">
+        <tr>
+            <th>ID Akun</th>
+            <th>nama Akun</th>
+            <th>Password terenkripsi</th>
+        </tr>
+        <tr>
+            <td>
+                <div id="ID"></div>
+            </td>
+            <td>
+                <div id="Akun"></div>
+            </td>
+            <td>
+                <div id="Password"></div>
+            </td>
+        </tr>
+    </table>
+    <p>
+        <button onclick="loadAjaxJS()">Javascript</button>
+        <button onclick="loadAjaxJSList()">javascript List</button>
+    </p>
+    <p>
+        <button onclick="loadAjaxJQ()">jQuery</button>
+        <button onclick="loadAjaxJQList()">jQuery List</button>
+        <button onclick="loadAjaxJQListEach()">jQuery List Each</button>
+    </p>
+    <p>
+        <button onclick="loadFetchAPI()">fetch API</button>
+        <button onclick="loadFetchAPIList()">fetch API List</button>
+    </p>
+
+    <h1>Mengambil Satu Data</h1>
+    <table>
+        <tr>
+            <th>Nama Akun</th>
+        </tr>
+        <tr>
+            <td>
+                <div id="AkunNama"></div>
+            </td>
+        </tr>
+    </table>
+
+    <button onclick="loadAjaxJSNama()">Javascript</button>
+    <button onclick="loadAjaxJQNama()">jQuery</button>
+    <button onclick="loadFetchAPINama()">fetch API</button>
+
+
+    <script src="js/ajaxJS.js"></script>
+    <script src="js/library/jquery-1.9.1.min.js"></script>
+    <script src="js/ajaxJQuery.js"></script>
+    <script src="js/fetchAPI.js"></script>
+    <script src="js/onStartUp.js"></script>
 </body>
+
 </html>
